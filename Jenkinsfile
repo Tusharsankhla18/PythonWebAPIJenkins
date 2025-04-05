@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
     steps {
-        bat 'C:\Users\Hp\AppData\Local\Programs\Python\Python313\python.exe -m venv venv'
+        bat 'C:\\Users\\Hp\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv venv'
         bat '.\\venv\\Scripts\\activate && C:\Users\Hp\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip'
         bat '.\\venv\\Scripts\\activate && C:\Users\Hp\AppData\Local\Programs\Python\Python313\python.exe -m pip install -r requirements.txt'
     }
